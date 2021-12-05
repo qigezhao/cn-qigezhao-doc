@@ -7,10 +7,15 @@ sudo npm install -g gitbook-cli
 gitbook init
 ```
 
-## 部署与导出
+## 编译与本地部署
 ```
-gitbook serve --port 8080
 gitbook build
+gitbook serve --port 8080
+```
+
+## 导出为 `pdf`
+```
+gitbook pdf
 ```
 
 ## 核心配置文件
