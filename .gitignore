@@ -1,2 +1,23 @@
+# HTML files
+*.html
+*.js
+*.css
+*.svg
+*.ttf
+*.woff
+*.woff2
+*.eot
+*.otf
+
+# Gitbook files
+.npmignore
+.project
+.eslintrc
+
+# Export result
 *.pdf
+*.epub
+
+# Build result
 ./doc/_book/*
+./doc/node_modules/*
