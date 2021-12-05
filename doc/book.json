@@ -1,0 +1,26 @@
+{
+  "title": "经历的最佳工程实践",
+  "author": "赵齐葛",
+  "description": "从业11年经历的最佳工程实践的个人学习经验，仅供参考",
+  "language": "zh-hans",
+  "direction": "ltr",
+  "gitbook": "3.2.3",
+  "links": {
+    "sidebar": {
+      "关于作者": "https://www.qigezhao.cn"
+    }
+  },
+  "plugins": [
+    "-lunr", "-search", "search-pro",
+    "insert-logo",
+    "back-to-top-button",
+    "chapter-fold", "expandable-chapters-small",
+    "copy-code-button"
+  ],
+  "pluginsConfig": {
+    "insert-logo": {
+      "url": "/resources/logo.png",
+      "style": "background: none; max-height: 32px; min-height: 32px"
+    }
+  }
+}
