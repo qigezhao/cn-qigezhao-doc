@@ -11,27 +11,17 @@ WWW_DIR="/www/$APP_NAME"
 GIT_URL="https://gitee.com/qigezhao_cn/cn-qigezhao-doc.git"
 
 
+
 echo "Installing $APP_NAME:"
 cd /tmp
 
-
 echo "- updating yum..."
 yum update -y
-
 
 echo "- installing npm..."
 yum install -y npm
 echo "-- installing gitbook-cli..."
 npm install -g gitbook-cli
-echo "-- installing gitbook-plugins..."
-npm install -g gitbook-plugin-back-to-top-button
-npm install -g gitbook-plugin-insert-logo
-npm install gitbook-plugin-chapter-fold
-npm install gitbook-plugin-expandable-chapters-small
-npm install gitbook-plugin-search-pro
-npm install gitbook-plugin-copy-code-button
-
-
 
 echo "- installing supervisor..."
 yum install -y supervisor
@@ -40,7 +30,6 @@ echo "[includes]" >> supervisord.conf
 echo "files = /etc/supervisord.d/*.ini" >> supervisord.conf
 mv /etc/supervisord.conf /etc/supervisord.conf.bak
 mv supervisord.conf /etc/
-
 
 echo "- installing git..."
 yum install -y git
@@ -64,6 +53,7 @@ cp -rf files/supervisor_$APP_NAME.ini /etc/supervisord.d/
 
 echo "Initializing $APP_NAME..."
 cd $WWW_DIR
+gitbook install
 gitbook init
 
 
