@@ -10,17 +10,31 @@
       "关于作者": "https://www.qigezhao.cn"
     }
   },
+  "styles": {
+    "website": "/resources/doc.css",
+    "ebook": "/resources/doc.css",
+    "pdf": "/resources/doc.css",
+    "epub": "/resources/doc.css",
+    "mobi": "/resources/doc.css"
+  },
   "plugins": [
     "-lunr", "-search", "search-pro",
     "insert-logo",
     "back-to-top-button",
     "chapter-fold", "expandable-chapters-small",
-    "copy-code-button"
+    "copy-code-button",
+    "-sharing",
+    "tbfed-pagefooter"
   ],
   "pluginsConfig": {
     "insert-logo": {
       "url": "/resources/logo.png",
       "style": "background: none; max-height: 32px; min-height: 32px"
+    },
+    "tbfed-pagefooter": {
+      "copyright":"qigezhao.cn &copy 2021",
+      "modify_label": "edited at",
+      "modify_format": "YYYY-MM-DD HH:mm"
     }
   }
 }
