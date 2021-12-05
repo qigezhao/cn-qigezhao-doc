@@ -10,14 +10,19 @@
 *.otf
 
 # Gitbook files
+LICENSE
 .npmignore
 .project
 .eslintrc
+*.map
+*.gif
+*.ts
+package.json
 
 # Export result
 *.pdf
 *.epub
 
 # Build result
-./doc/_book/*
-./doc/node_modules/*
+doc/_book
+doc/node_modules
